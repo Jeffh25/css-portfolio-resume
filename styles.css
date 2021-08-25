@@ -1,0 +1,119 @@
+/* ------- Global Styles ---------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.itemDetails h3 + p {
+  font-style: italic;
+}
+.itemDetails h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px solid white;
+  padding: 25px 0;
+}
+/* .divider > section:last-of-type {
+    border: none;
+} */
+.contentBox {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+a {
+  color: bisque;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+    color:rgb(73, 73, 73)
+}
+h2{
+    margin: 0;
+}
+/* ------- About/ Profile ---------- */
+.aboutMe {
+  background: rgb(168, 168, 120);
+}
+/* Still working on setuping up on opposite sides. */
+/* .header {
+    margin-left: 60px;
+} */
+
+/* ------- Projects/ Portfolio ---------- */
+.projects {
+  background: silver;
+}
+.projects .btn {
+  background: olive;
+  border-radius: 5px;
+  padding: 7px;
+  display: inline-block
+}
+.projects .btn:hover {
+    background: rgba(128, 128, 0, 0.55);
+}
+.projectItem {
+    overflow: hidden;
+}
+.projects img {
+    float: left;
+    margin-right: 20px;
+}
+/* ------- Work Experience ---------- */
+.work {
+  /* background: rgb(129, 147, 165); */
+  background: tan;
+}
+
+/* ------- Education & Certifications ---------- */
+.school {
+  background: silver;
+}
+
+/* ------- Contact Info/ Footer ---------- */
+.contact {
+  /* I like this color but I think for the overall earth tone look the duller version might flow better */
+  /* background:rgb(167, 167, 101)  */
+  background: rgb(168, 168, 120);
+}
+.contactLinks {
+  list-style-type: none;
+  padding: 0;
+  /* display: flex;
+  justify-content: center; */
+}
+
+/* ------- Responsive ---------- */
+@media screen and (min-width: 727px) {
+header h1, header h2, footer h2 {
+    text-align: center;
+}
+  .job {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contactLinks {
+    list-style-type: none;
+    padding: 0;
+      display: flex;
+      justify-content: center;
+  }
+  .contactLinks a {
+    padding: 25px;
+    display: inline-block;
+    margin: 0 5px;
+}
+}
